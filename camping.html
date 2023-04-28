@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>camping_match</title>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+<script src="js/jquery-1.12.4.min.js"></script> <!--3버전이 삭제되서 1버전을씀-->
+<script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+<script src="js/jquery-3.6.1.min.js"></script>
+<script src="js/main_top.js"></script>
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/reset.css">
+</head>
+<body>
+    <div id="wrap">
+        <div id="top_wrap">  
+               <!--로고시작-->
+            <h1 id="logo">
+                <a><img src="img/logo.png" alt="로고" width="100" height="50"></a>
+            </h1><!--logo-->
+
+            <!--검색시작-->
+            <p id="search">
+                <input type="search" placeholder="검색">
+            </p><!--search-->
+
+            <!--마이페이지,로그인시작-->
+            <div id="my_login">
+            <p><a  href="#">마이페이지</a></p>
+            <p><a  href="#">로그인</a></p>
+            </div><!--my_login-->
+
+            <!--ON,OFF시작-->
+            <div id="s_switch">
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+              <p class="off">OFF</p><p style="display:none;" class="off">ON</p>
+            </div><!--s_switch-->
+
+            <!--사이드메뉴시작-->
+            <div id="quick_c">
+                <ul id="quick">
+                    <p id="quick_img"><img src="img/three_ca.png" alt="#" width="30" height="30"></p>
+                </ul><!--quick-->
+
+                <div id="q1_menu">
+                    <ul>
+                        <li><a href="#">예약</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">쇼핑</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">기획전</a></li>
+                    </ul>
+                    <p class="close_btn">
+                        <a href="#">
+                            <img src="img/close.png" alt="#" width="16" height="16">
+                        </a>
+                    </p>
+                </div><!--q1_menu 빠른메뉴-->
+            </div><!--quick_c-->
+
+        </div><!--top_wrap-->
+
+        <!--카테고리시작-->
+        <div id="m_wrap">
+            <ul>
+                <li><a href="#">오토캠핑</a></li> 
+                <li><a href="#">글램핑</a></li>
+                <li><a href="#">백패킹</a></li>
+                <li><a href="#">카라반</a></li>
+                <li><a href="#">차박</a></li>
+            </ul>
+            
+        <!-- 배너시작 -->
+            <div id="banner_wrap">
+                <p class="banner_btn">
+                    <img src="img/prev1.png" alt="#" width="46" height="46" class="prev_btn">
+                    <img src="img/next1.png" alt="#" width="46" height="46" class="next_btn">
+                </p><!--btn-->
+
+                <div id="notice_wrap">
+                    <ul id="notice">
+                        <li class="no1"><a href="#"><img src="img/banner1.jpg" alt="배너사진1" width="1024" height="576"></a></li>
+                        <li class="no2"><a href="#"><img src="img/banner2.jpg" alt="배너사진2" width="1024" height="576"></a></li>
+                        <li class="no3"><a href="#"><img src="img/banner3.jpg" alt="배너사진3" width="1024" height="576"></a></li>
+                    </ul><!--notice-->
+                </div><!--notice_wrap배너사진전체-->
+
+            </div><!--banner_wrap전체-->
+        </div><!--m_wrap-->
+
+        <!-- 하단메뉴 -->
+        <div id="main_footer">
+            <nav id="main_navi">
+                <ul>
+                    <li><a href="#">지역</a></li>
+                    <li><a href="#">테마</a></li>
+                    <li><a href="#">매칭</a></li>
+                    <li><a href="#">톡톡</a></li>
+                    <li><a href="#">취향</a></li>
+                </ul>
+            </nav><!--main_navi 주메뉴-->
+        </div><!--main_footer-->
+
+
+
+
+
+    </div><!--wrap전체-->
+
+    
+        
+   
+</body>
+</html>

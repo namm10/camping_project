@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+/* 전체 */
+html,body{height:100%; -webkit-user-select:none; -ms-user-select:none; user-select:none;}
+
+/* 전체 */
+#wrap{width:100%;height:100%; min-width:1902px;}/*메인전체*/
+
+/* 상단전체 */
+#top_wrap{width:1902px; height:100px; margin-top:30px;}
+
+/* 로고 */
+#logo{width:100px; height:50px; float:left; margin-left:50px;}
+#logo > a{width:100px; height:50px; cursor:pointer;}
+
+/* 검색 */
+#search{float:left; width:1000px; height:50px; margin-left:300px;}
+#search > input{width:1000px; height:50px; border:2px solid #333; border-radius:50px; outline:none; font-size:18px; 
+                font-weight:normal; text-indent:20px;}
+
+/* 마이페이지,로그인버튼 */
+#my_login{float:left; width:80px; height:50px; margin-left:200px; margin-right:20px;}/*마이페이지,로그인*/
+#my_login > p:nth-child(1){width:74px; font-size:14px; cursor:pointer;}/*마이페이지*/
+#my_login > p:nth-child(2){width:50px; font-size:14px; cursor:pointer;}/*로그인*/
+
+/* ON,OFF토글 */
+#s_switch{width:76px; height:20px; float:left;}
+.switch{position:relative; display:inline-block; width:30px; height:17px; vertical-align:middle;}
+.switch input{display:none;}
+  
+  /* 슬라이드 */
+.slider{position:absolute; cursor:pointer; top:0; left:0; right:0; bottom:0; background-color:#ccc; 
+        -webkit-transition:.4s; transition:.4s;}
+.slider:before{position:absolute; content: ""; height:11px; width:11px; left:2px; bottom:2px; background-color:white; 
+                -webkit-transition:.4s; transition:.4s;}
+  
+/*슬라이드 input*/
+input:checked + .slider{background-color:rgb(192, 212, 255);}
+input:focus + .slider{box-shadow: 0 0 1px rgb(192, 212, 255);}
+
+/*토글동그라미*/
+input:checked + .slider:before{-webkit-transform:translateX(13px); -ms-transform:translateX(13px); transform:translateX(13px);}
+  
+/* 토글바뀔때 */
+.slider.round{border-radius:34px;}
+.slider.round:before{border-radius:50%;}
+.off{margin:0px; display:inline-block; font-size:15px; font-weight:bold;}
+
+/* 사이드카테고리 */
+/* #three_line{border:none; background-color:#fff; cursor:pointer;} */
+#quick_c{float:right; width:436px; height:954px; position:relative; /*top:-82px;*/}/*전체*/
+#quick_img > img{position:absolute; right:116px; top:-30px;}/*햄버거 이미지*/
+
+#quick li a.sel{color:#ffffff; background-color:#1c4d9c;}/*js에추가할것*/
+
+/* 열린카테고리 */
+#q1_menu{background-color:#fff; position:absolute; width:436px; height:954px; font-size:50px; text-align:center; top:-82px;}/*열린카테고리전체*/
+#q1_menu > ul > li{width:360px; border-bottom:2px solid #666; margin:100px auto 0 auto; padding-bottom:50px;}/*열린카테고리 li*/
+
+/* 닫기 */
+.close_btn a{position:absolute; top:0; right:40px;}
+
+/* 동그라미 카테고리 */
+#m_wrap{width:1000px; height:80px; margin:0 auto;}
+#m_wrap > ul > li
+{width:80px; height:80px; float:left; list-style:none; margin-right:145px; border:2px solid #333; 
+border-radius:50%; line-height:110px; text-align:center; cursor:pointer;}/*카테고리*/
+#m_wrap > ul > li:nth-child(1)
+{background:url(../img/autocamping.png) no-repeat top center; background-color:#c6dbda;}/*1번째이미지*/
+#m_wrap > ul > li:nth-child(2)
+{background:url(../img/glamping.png) no-repeat top center; background-color:#ffccb6;}/*2번째이미지*/
+#m_wrap > ul > li:nth-child(3)
+{background:url(../img/backpacking.png) no-repeat top center; background-color:#fee1e8;}/*3번째이미지*/
+#m_wrap > ul > li:nth-child(4)
+{background:url(../img/caravane.png) no-repeat top center; background-color:#cbaacb;}/*4번째이미지*/
+#m_wrap > ul > li:nth-child(5)
+{background:url(../img/chabak.png) no-repeat top center; margin-right:0; background-color:#fef5cc;}/*5번째이미지*/
+
+/* 배너 */
+#banner_wrap{width:1024px; height:576px; position:relative; overflow:hidden; top:50px; left:-10px;}/*배너전체*/
+.prev_btn, .next_btn{position:absolute; top:50%; transform:translate(0,-50%); cursor:pointer;}/*< >*/
+.prev_btn{left:0; z-index:10;} /* < */
+.next_btn{right:0; z-index:10;} /* > */
+
+/* 배너이미지 */
+#notice_wrap{float:left; position:absolute; float:left; width:3072px; height:576px;}/*배너이미지전체*/
+#notice{width:3072px; height:576px;}
+#notice li{width:1024px; height:576px; float:left;}
+
+/* 하단메뉴 */
+#main_footer{width:100%; height:50px; background-color:#666; min-width:1300px; float:left; margin-top:-130px;}/*전체*/
+#main_navi{clear:both; width:1200px; height:50px; margin:0 auto;}/*nav전체*/
+#main_navi ul{width:1200px; height:50px;}
+#main_navi ul li{float:left; width:240px; height:50px; text-align:center; line-height:50px;}
+#main_navi ul li a{width:240px; height:50px; display:block; color:#fff; font-size:20px; font-weight:bold;}
+#main_navi ul li a:hover{background-color:#8fcaca;}
+
+
+
+
+
+
+
+
+
+
